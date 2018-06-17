@@ -1,0 +1,6 @@
+<%= @photo.title %>
+<%= @photo.date %>
+<%= image_tag @photo.file_location.url, class:"img-thumbnail", size:"140x140" %>
+<%= simple_format(@photo.description) %>
+
+<p><%= link_to "Back_to_index", photos_path %></p>
